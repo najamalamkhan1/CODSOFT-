@@ -3,39 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- importing google fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
     />
-    <!-- importing boxicons -->
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
+    <title>Document</title>
   </head>
   <body>
-    <!-- <header> -->
-    <!-- Navbar section -->
-    <div class="container">
-      <div class="logo">
-        <h1>Najam</h1>
+    <header>
+      <div class="myProfile">
+        <img
+          src="https://media.licdn.com/dms/image/D4D35AQGCRo_s3CA30A/profile-framedphoto-shrink_200_200/0/1689197547625?e=1698577200&v=beta&t=obrWRxsgLzHSB-fS2ogtGXgZ9-sQaw3FMtuDC9Rb48M"
+          alt="profile"
+          class="profileImg"
+        />
+        <h1>Najm E Alam</h1>
+        <p>HTML | CSS | JS developer</p>
       </div>
-      <div class="nav">
-        <ul>
-          <a href="#" ><li>Home</li></a>
-          <a href="#" ><li>About</li></a>
-          <a href="#"><li>My Skills</li></a>
-          <a href="#"><li>Projects</li></a>
-          <a href="#"><li>Contact Us</li></a>
-        </ul>
+      <div class="d-print-none">
+        <a
+          class="btn btn-light btn-lg shadow-sm mt-1 me-3"
+          href="/NAJM+E+ALAM+resume.pdf"
+          data-aos="fade-right"
+          data-aos-delay="700"
+          >Download CV</a
+        >
       </div>
-      <i class="bx bx-menu"></i>
-    </div>
-    <!-- </header> -->
-    <section></section>
-    <footer></footer>
+    </header>
+    <section>
+      <div class="about">
+        <h2>About</h2>
+        <p>
+          I am a HTML, CSS and JavaScript developer and a Software Engeeniring
+          Student at Indus University Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Deserunt, sunt officia pariatur dolores nesciunt
+          facere sit accusamus obcaecati. Rem dolorem fuga nemo officiis amet
+          delectus dolor facilis asperiores repellat nisi.
+        </p>
+      </div>
+      <div class="info p-5">
+        <h3>Basic Information</h3>
+        <h3>Age:</h3>
+        <span>22</span>
+        <h3>Email:</h3>
+        <span>najamalamkhan1321@gmail.com</span>
+        <h3>Phone:</h3>
+        <span>923449787510</span>
+        <h3>Language:</h3>
+        <p>Pashto</p>
+      </div>
+      <div class="skills">
+        <h3>Skills</h3>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </div>
+    </section>
+    <footer>
+      <div class="email p-5 m-4">
+        <h3>Contact Me</h3>
+        <h4>Email :</h4>
+        <span>najamalamkhan1321@gmail.com </span>
+        <h3>Phone</h3>
+        <span>03449787510</span>
+      </div>
+      <div class="social p-5 m-4">
+        <h3>Follow Me On</h3>
+        <h4>
+          <a href="https://www.linkedin.com/in/najam-alam-khan-6b53a7174/">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAjBJREFUaEPt2c3LDVEcB/DPQyHKxl6JekQ2FmQhL+EpK++KhX+ALCwsWHgrJQv5C/TEwvuGBVHY2igRsbGTsvSa0Km5NZ3O3DvXc2fmTmZ2d2bu+X2/v+935nvOnAktPyZajl9HoGkFOwXGWYE9OIfJhkG+xUncSuHoZ6FXWNEw+F7511g5LIE/YwK+ByPZ7H4KdARGrOBIFPiA43iM39iKC1g8YrCl7T6shTbiaTT65oxQ1RxmrMAPzEugnI0vmFsxg8oIzMI3zBl3AgHfBjxrq4UC7vfYjncZiRB097Ck4u6H4WdsoTzGl9mPVTUA74Is3+SbCPOS/LEc+3MnzmYZkb/nMBbhSZYbQcHPWIq1OIhNA9QciYX2JmaFO3EnVzxV6AXO43ofkOvwCPML7qmMwA7cHUAgvL3iAEzhPILLdRPYhdsDCJR91kP3P2FB4g+VKVDGQj08q7EQH/GmgNUDbKuTQBkLBTzXcCAH7BCmE0Av4ti4EQjhdz8C9T17M32Nzh/FpToJlLFQUVfX4HkENihzZdwIxPbp4ZvCwwhs+JgQ8iY+Gn2Ir2ZhFYNK5UqlBPYlurM7CrewLvgZIS0iEBL8Rp0KdASibncKDLuo7yzUWSjqwLAWOpWYFq/Hmdy44WPXr6jOCWxJhNPpbJGTvxSm3qFOJUFWMIGs5fRIkrgWpAVF/j8Crd/gCJOqsBBf1qRv8M9bTA3jLle+22Yt16fq7uoUqK635UZuvQJ/ASWbnTHoImdnAAAAAElFTkSuQmCC"
+            />
+            /najamalamkhan</a
+          >
+        </h4>
+        <h4>
+          <a href="https://www.instagram.com/naj.mee1/">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABPJJREFUaEPtmWWodkUQx3+vXaCi2N34QT/YIiYqBnYrtqgotiiCrQhiIpjYGNiNnYiiqCgGdmFiY2Hzkzmy99w95+y593leuXDn03327M7sf3fmPzN7pzDBZcoE3z+TAP7vG5y8gYl4AwsAuwCbAUsAi4wTxMfAu8C9wPXAp3309XGhmYFTgMOBafsY6TH3T+A84Hjgl5J1pQDWA64EFi1ROoA5HwJ7AY916SoBsA7weE3Rt8DtwIvA28BvXYYavnurywNrAhsDs9bmrQs80aa7C4AGXgcWCyVfAUcC14xxw23LZgNOCv3VvA8CYKM7dQE4J3xehQbXqsAnQ9h8qnI14Nlk4FzgiCabbQAWBj5KFq5f4pM9wc0F7BmM9gJwMvAjcGLcRqVODzAuRkkbgP2AS2PFc4AnM2g5GLggUeqN66KK7ipA5UDg4r4ALgf2jkWnBbX1BWCA/h6Bnlt7BnBs8kHXWSN+3wZsHX9fAezTF4DMIwMpOwA3F+x+pvBX2WMVYI5YI2s9DzwSPF+xlgnxukTvCcCp8Vt38rfyKLBBXwDvJ+wjkCc7AKwE3Ags1THvTWBH4OWYtxuwYpCE6z+L8f0TtzFTZ/W2xcA3wJyhTAOvtGxMljgListzM66+fn6Lzp2jtHCKe6niYcSSNgB/JzMbWSCS0NO1jVwN3A08BcwYBLAl4GlXov7VAQkiJ9sAt8aHnwDzxCgpBTAf8EVm/SzAq8Di8c1c4SabSoANgWuBeWO+WXwF4NeMbgPYQFZ+zmTpfz+UApgb+DpjRA63RqpkLaB+G/VlBuPDyaCBfMOwARgL32WMXAXsEeOXAAc0uEN9WFq0WFPMNQZsXQZ6A7MDP2SM6FbzxPhGwEOFADaPGHH6O8DSmXVbRcHoJ2sh3XWUlLrQ/MDntdVLhvFqWM7/vhCATVFaU+X02zDdk+jL7rUUQI6FlgPeSAw0uVkOkxtOO69lMtnagH8wWTwdIP2OkFIAto22fqlME+wx/RhcKD3dJvfQJR8Y5g2o+5ngcv++Bdi+0IXujwbG6Wb4qmRJl28afXI1NnAXUvFFNeYpKblNaHckOzUbH5YBvgVwZ4xbEM4wniDOuZD6lgVeAuzcFP169yjacvZ0CxNZxVxmWBPZe5nJaSYeNwu1lRLbZSpVSwl7Zl3MUmJlYFtg19pGPWVLjpzslCQ42a2qbIuD2PRdnaw8LV83yTGAtX1Xi1qttw46Gji7RacJ0kSpSLkL9XUh20nbSmXtKMxa7FFaTnsQnq4tZJvsC1wWE9xL9kmn7cSsEm1KFOv3mzoM+tmG5kzAVrGu+68on49rKN7q6m1mbGoUn288oFHSBiBt6XyRs9EuFXOD2daqU3f5MgJcNikVO0DjS5GNLC16ATg02j8X2Q76pDI1JW3qfc70ybEXAJnHtrISaU1mmRqim52eGPIROd3Lf5+6WMMkc0jMtpiTjXy3GabY+76WJK4LgYOaDHYBkEbfSijMU/Bk5Pk/BozCctnDOirpf6VPi8bGQ+sC4B43Ae6rbdbmxiCXHQTYJzhTVenjrlm63vda9NVtj9hKCQAXqMiXsWwyGfBNqM4D8iGr6okbTZQCUIFP3/Kyhdew/sGhHatT8069gcqC6AOgUrBgZFLbwkH9i8nYMjP7GnhXnxsdC4A++oc+dxLA0I+4w8DkDUzewDhP4B8eSfcxwYb8SQAAAABJRU5ErkJggg=="
+            />
+            /naj.mee1
+          </a>
+        </h4>
+        <h4>
+          <a href="https://github.com/najamalamkhan1">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABHBJREFUaEPtmXmoVVUUxn+PECoxhQZzCDEtcoDEiVATMtPEiKISyYHQRFScR0woEzUjFU1EtIGoHCFSSxwRFREnFAJTnIfKMDNT0z8M5YNzH+edt6dzz7nv8eAteDzu3Xt/e31rr73WXuuWUcOlrIbrTy2B6j7BPE/gSeAV4CWgB9AsQe4PYGf0txm4lAf5rAQaAROBvsBzKRU6BWwCFgDnU64tn56FwAxgOvBQsZvH1s0C5gB30mIVQ0BussLgImn3Ts6XS70PbEkDlJbAl8CQNBsUMfcrYGjoulACj0T+2jUUOOO8vUAf4IYPJ4RAHWA70N0HlvP4LuBl4H8XbgiBZcDwnJULhVsMjM1C4F3gewPAcmA10A4YCbQM1Sgx7yKwFDgY5ZCpBpy3gB9s+K4TaACcBfQ/Kd0A+WlBdEIfAUpmBfkT+B24CzQBGsfG/gY+BhbFvnsWOGHYSzhPA/+ZSLgIzAcmWJib1tUFWkdK/2ZZp8QnImeAa4Y5t4CHDd/LODPTEHgMuOBIUiF3pxivkrWfMCz8B3gKuJkcsykixh86NKgP/FuMhp419xzjo4EloQR0uZo6wDoCh3Mm0DxyLRvsEaB9CAEpp6hgE29oy0BsGjDXsV7BQIGhXEwuNBn41AKiiKKTka+WQnSB9exW5jfJIOA7H4E1QD8LwHrgjVJoHsP8GnjPssfCZGQ0ncBR4HkLgPEi5UxoMPCNBXMj8LrvBORjitcmUWZelbPCSbhejif1MaCNj8BloKFFSVnn22okoNCtEO68xCr1WliUVPmoErCUMtBhJD0nlPGdBPYBL1g0/AxQlCql6EH3iWWDc4DyhZPAT1GRbsLY7yCXFykV+ipmTHII6OQjoHQ9yqGNXqfX89LWgHMbeNCCrxDf30dAOUATbVIpFudIxvcGk2FVPzhdSC/RKx6lFOq25ai4oFRj7PFgtgKO+who/EDS1xLAigZvAltzIqFO3o9APQeeouMzyXHbc1r9GfV+CqL3iToEqpriIndSQ+qvIonotNUcGx+wXtFPUbCC2Ago1krpgkVWAgOALlGIezGGom6auha/AKeBDQ4X1CPt7ciSbYGejgub1FVkr4YS0LzZkXUKaxTe3ok+yMUqpPToez3DO3usuSNq/gYYvXzK58AY0wJXaahQJqvGOw5qsYyIkomUfTQBqgi2zqOZjLA2hfYqrlRrVyonheGrbeUquxObycJSXs8NlZ2vAordSnIKc74Ippo3TT3R2xUsfASku5SK16I/A6+lsKBpqqv2jc+fBKg7YpUQAlo8D5gSQ1E/Z1wGEiEEZDTVH04JJWC61Io4qtBUbKs1rn6PYrmxAZXQwkdAJa2pS1eJTBoCWqzWulrsNnk8MCe4CAwDvvBZvjCeloDWdYgKa9NPSlkI/AqoaE/VrimGQIG82h9qg8SlGAJqJ+pOfRBq9fi8LASEozygI1eH+oGoiRuihx5kJ6POt+5N6t/GsrhQiIJVNifrCVSZoraNaglU9xHU+BO4DzvMvTGGqVZOAAAAAElFTkSuQmCC"
+            />
+            /najamalamkhan1
+          </a>
+        </h4>
+        &copy;
+        <span> 2023 alright reserver Najm E Alam </span>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -1,69 +1,64 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+header {
+  background-image: url("https://images.pexels.com/photos/5588380/pexels-photo-5588380.jpeg?auto=compress&cs=tinysrgb&w=400");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
 }
-.container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  /* background-color: gray; */
-  padding: 10px;
-  /* color: white; */
-  position: sticky;
-  top: 0;
-  transition-property: all;
-  transition-duration: 2s;
-  z-index: 1;
+.myProfile {
+  width: 20%;
+  height: 50%;
+  margin: auto;
 }
-
-.logo {
-  font-family: "Dancing Script", cursive;
+.profileImg {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.d-print-none {
+  width: 18%;
+  height: 50%;
+  margin: auto;
 }
 
-ul {
+section {
   display: flex;
-  list-style: none;
+  background-color: aliceblue;
+  width: 80%;
+  height: 90%;
+  margin: auto;
+  border: 1px solid black;
+  box-shadow: 0px 0px 3px 1px;
+  margin-top: 10px;
 }
-li {
-  margin: 10px;
-  color: black;
+.about {
+  padding: 5%;
+  width: 50%;
+  height: 50%;
+}
+.info {
+  width: 50%;
+  height: 50%;
+  display: inline-table;
+}
+
+.skills {
+  width: 20%;
+  height: 20%;
+  margin: auto;
+}
+footer {
+  display: flex;
+  background-color: rgb(240, 248, 255);
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  border: 1px solid black;
+  box-shadow: 0px 0px 3px 1px;
+  margin-top: 10px;
+}
+.social {
+  margin: 50px;
 }
 a {
   text-decoration: none;
-}
-
-.container:hover {
-  background-color: rgba(31, 25, 17, 0.404);
-  position: sticky;
-  top: 0;
-}
-
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
-}
-
-/* a {
-  font-weight: bold;
-  font-size: 15px;
-  text-decoration: none;
-} */
-
-/* For Small Devices */
-/* APPLYING MEDIA QUERIES */
-@media (max-width: 768px) {
-  .nav {
-    display: none;
-    position: absolute;
-    background-color: teal;
-    right: 0;
-    left: 0;
-    text-align: center;
-    padding: 16px 0;
-  }
-
-  .material-symbols-outlined{
-    display: block;
-    
-  }
+  color: black;
 }
